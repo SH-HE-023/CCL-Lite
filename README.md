@@ -1,5 +1,9 @@
 # CCL Lite（Communist Craft Launcher · 开源精简版）
 
+- 仓库：<https://github.com/SH-HE-023/CCL-Lite>
+- 发行版：<https://github.com/SH-HE-023/CCL-Lite/releases/latest>
+- 首个版本下载：<https://github.com/SH-HE-023/CCL-Lite/releases/tag/v0.1.0>
+
 我的世界 Java 版启动器（Windows 优先）。这是 **公开源码用的精简版**：只保留**启动**和**下载**，账户仅离线模式。
 
 - 桌面框架：Electron 33（主进程负责文件、网络、进程，渲染层负责界面）
