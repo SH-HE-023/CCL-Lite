@@ -161,9 +161,41 @@ export default function SettingsPage() {
             {saved ? <span className="text-[11.5px] text-grass-soft">已保存</span> : null}
           </div>
 
+          <GlassCard className="p-5">
+            <div className="text-[12.5px] text-ink-100">关于 CCL Lite</div>
+            <div className="mt-1 text-[10.5px] text-ink-400">
+              {state?.appVersion ?? '0.1.0'} · 开源精简版（启动 + 下载 + 离线账户）
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Button
+                size="sm"
+                onClick={() => void api.openExternal('https://github.com/SH-HE-023/CCL-Lite')}
+              >
+                GitHub 仓库
+              </Button>
+              <Button
+                size="sm"
+                onClick={() =>
+                  void api.openExternal('https://github.com/SH-HE-023/CCL-Lite/releases/latest')
+                }
+              >
+                发行版 / 更新
+              </Button>
+              <Button
+                size="sm"
+                onClick={() =>
+                  void api.openExternal('https://github.com/SH-HE-023/CCL-Lite/releases/tag/v0.1.0')
+                }
+              >
+                0.1.0 发布页
+              </Button>
+            </div>
+          </GlassCard>
+
           <Field label="主题">
             <span className="text-[11.5px] text-ink-400">配色固定为墨黑 / 纸白 / 嫩芽绿三色，这一版不提供切换。</span>
           </Field>
+
         </div>
       )}
     </div>
